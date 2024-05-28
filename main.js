@@ -20,7 +20,7 @@ function checkDomainAvailability(domain) {
         data: {
             apiKey: 'at_MpGubflvtoDuHnUMwTSSPnCaM9m2B',
             domainName: domain,
-            credits: 'DA'
+            credits: 'DB'
         },
         success: function(data) {
             toggleButton(false); // Enable the button and revert text
