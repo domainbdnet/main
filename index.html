@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Server Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <style>
+      .carousel-item {
+        display: none;
+      }
+      .carousel-item.active {
+        display: block;
+      }
+      /* Additional styles for mobile layout */
+      .carousel-container {
+        display: flex;
+        overflow: hidden; /* Hide overflowing items */
+      }
+      .carousel-item {
+        min-width: 100%; /* Default width for desktop */
+      }
+      @media (max-width: 640px) {
+        /* On mobile screens, set width to 50% to show two items */
+        .carousel-item {
+          min-width: 50%;
+        }
+      }
+    </style>
+    
+    
+</head>
+<body class="bg-green-600">
+
+<header class='flex shadow-md py-4 px-4 sm:px-10 bg-green-600 text-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
+        <a href="javascript:void(0)" class="text-xl font-bold">
+           <!-- <img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36' /> -->
+           Domain Server BD
+        </a>
+
+        <div id="collapseMenu"
+            class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+            <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-xl bg-white p-3'>
+                <i class="fas fa-times text-black"></i>
+            </button>
+
+            <ul class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-green-600 max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 text-white'>
+                <li class='mb-6 hidden max-lg:block'>
+                   <a href="javascript:void(0)" class="text-xl font-bold">
+                   <!-- <img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36' /> -->
+                   Domain Server BD
+                   </a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Home</a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Team</a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Feature</a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Blog</a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>About</a>
+                </li>
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Contact</a>
+                </li>
+                
+                <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                <a href='checkout.html'
+                class='hover:text-[#007bff] text-white block font-semibold text-[15px]'>Checkout</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class='flex max-lg:ml-auto space-x-3'>
+            <button onclick="window.location.href='https://my.domainserverbd.com';" class='px-4 py-1 text-sm rounded-xl font-bold text-green-600 border-2 border-green-700 bg-green-200 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white'>
+                Login
+            </button>
+
+            <button id="toggleOpen" class='lg:hidden text-white bg-green-600 p-1 rounded'>
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<script type="text/javascript">
+    var toggleOpen = document.getElementById('toggleOpen');
+    var toggleClose = document.getElementById('toggleClose');
+    var collapseMenu = document.getElementById('collapseMenu');
+
+    function handleClick() {
+        if (collapseMenu.style.display === 'block') {
+            collapseMenu.style.display = 'none';
+        } else {
+            collapseMenu.style.display = 'block';
+        }
+    }
+
+    toggleOpen.addEventListener('click', handleClick);
+    toggleClose.addEventListener('click', handleClick);
+</script>
+  
+  
+<section class="container mx-auto py-6 px-4">
+  <!-- Grid Layout for the Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
+    
+    <!-- 1st Column: Search Box and Heading -->
+    <div data-aos="fade-right" class="flex flex-col items-center md:items-start text-center md:text-left">
+      <h1 class="text-4xl font-bold text-white  mb-6">Search & Register Domain</h1>
+      
+      <!-- Domain Search Box -->
+      <div class="flex w-full max-w-md mb-1">
+        <input id="domainInput" type="text" placeholder="Enter Domain" class="w-full p-3 rounded-l-lg border border-gray-300 text-gray-700 focus:outline-none focus:border-green-600">
+        <button id="searchButton" class="bg-white text-2-xl hover:bg-green-200 text-green-600 px-6 py-3 rounded-r-lg">Search</button>
+      </div>
+      
+	 <div class="hidden" id="loading" role="status">
+	 <svg aria-hidden="true" class="w-8 h-8 text-white animate-spin fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+	 <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+	 </svg>
+	 <span class="sr-only">Loading...</span>
+	 </div> 
+ 
+ 
+      <div id="result"></div>
+      
+      <!-- Domain Pricing Cards -->
+      <div class="grid mt-4 grid-cols-2 md:grid-cols-4 gap-4 w-full justify-center">
+        <!-- .com Card -->
+        <div class="bg-white p-4 shadow-md rounded-lg text-center" data-aos="zoom-in">
+          <p class="text-xl font-semibold text-green-600">.com</p>
+          <p class="text-sm text-gray-500">৳499/Year</p>
+        </div>
+        <!-- .net Card -->
+        <div class="bg-white p-4 shadow-md rounded-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+          <p class="text-xl font-semibold text-green-600">.net</p>
+          <p class="text-sm text-gray-500">৳999/Year</p>
+        </div>
+        <!-- .org Card -->
+        <div class="bg-white p-4 shadow-md rounded-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+          <p class="text-xl font-semibold text-green-600">.org</p>
+          <p class="text-sm text-gray-500">৳999/Year</p>
+        </div>
+        <!-- .xyz Card -->
+        <div class="bg-white p-4 shadow-md rounded-lg text-center" data-aos="zoom-in" data-aos-delay="300">
+          <p class="text-xl font-semibold text-green-600">.xyz</p>
+          <p class="text-sm text-gray-500">৳299/Year</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd Column: Full Width Image -->
+    <div data-aos="fade-left" class="flex justify-center items-center">
+      <img src="assets/images/hero.png" alt="Domain Registration Image" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+    
+  </div>
+</section>
+
+<script>
+$(document).ready(function () {
+    $('#searchButton').on('click', function () {
+        var domain = $('#domainInput').val().trim();
+
+        if (domain) {
+            // Show loading animation
+            $('#loading').show();
+            $(this).prop('disabled', true); // Disable button to prevent multiple clicks
+
+            // Clear previous result
+            $('#result').empty();
+
+            // Call API to check domain availability
+            checkDomainAvailability(domain);
+        } else {
+            displayMessage('Please enter a domain name.', 'bg-green-200 text-black');
+        }
+    });
+    
+    function showLoader() {
+    $('#loader').fadeIn();
+    }
+    
+    function hideLoader() {
+    $('#loader').fadeOut();
+    }
+    hideLoader()
+    
+});
+
+function checkDomainAvailability(domain) {
+    const customerId = '997588332';
+    const apiKey = 'e13aua0HcOwNYMfauu5wlg';
+    const url = `https://jsonwhoisapi.com/api/v1/whois?identifier=${domain}`;
+    const auth = btoa(`${customerId}:${apiKey}`);
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        headers: {
+            'Authorization': `Basic ${auth}`
+        },
+        success: function(data) {
+            // Hide loading animation
+            $('#loading').hide();
+            $('#searchButton').prop('disabled', false); // Enable the button
+
+            if (data.registered) {
+                displayMessage(`This domain is registered. Please try another name.`, 'bg-red-500 text-white', domain);
+            } else {
+                const price = getPrice(domain);
+                displayAvailableDomain(domain, price);
+            }
+        },
+        error: function() {
+            displayMessage('An error occurred. Please try again later.', 'bg-green-200 text-green-600');
+            $('#loading').hide();
+            $('#searchButton').prop('disabled', false); // Enable the button
+        }
+    });
+}
+
+function getPrice(domain) {
+    if (domain.endsWith('.com')) return '799';
+    if (domain.endsWith('.net')) return '999';
+    return 'Price not determined. Message on messenger for price.';
+}
+
+function displayAvailableDomain(domain, price) {
+    $('#result').html(`
+        <div class="text-green-600 bg-green-200 rounded-lg p-4 my-2 text-center">
+            <h5 class="text-xl font-semibold">Congratulations! ${domain} is available for Only <b>${price}</b> BDT!</h5>
+     
+            <button onclick="redirectToOrder('${domain}', '${price}')" class="bg-green-600 hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold text-lg">Order Now</button>
+        </div>
+    `);
+}
+
+function displayMessage(message, classes, domain = '') {
+    let additionalText = domain ? `<p class="my-2 text-lg">${domain} is unavailable.</p>` : '';
+    $('#result').html(`
+        <div class="rounded-lg p-4 my-2 ${classes} text-center shadow-lg">
+            <p class="text-lg font-medium">${message}</p>
+            ${additionalText}
+        </div>
+    `);
+}
+
+function redirectToOrder(domain, price) {
+    // Validate inputs
+    if (!domain || !price) {
+        console.error("Domain name and price must be provided");
+        return; // Stop execution if domain or price is missing
+    }
+
+    // Store the new domain name and price in localStorage
+    localStorage.setItem("domain-Name", domain);
+    localStorage.setItem("domain-Price", price);
+    
+    // Redirect to the checkout page
+    window.location.href = "checkout.html";
+}
+
+
+
+
+
+
+</script>
+
+
+<section class="container mx-auto py-6 px-4">
+  <!-- Section Heading and Paragraph -->
+  <div class="text-center mb-8">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">30 Day Money-back Guarantee</h2>
+    <p data-aos="fade-up" class="text-white">We offer a refund guarantee for any issues within 30 days of domain registration.</p>
+  </div>
+
+  <!-- List of Features (3 in a row on desktop, stacked on mobile) -->
+  <ul class="flex flex-col md:flex-row justify-center items-center gap-6">
+    <!-- Item 1: Can Be Transferred Easily -->
+    <li class="flex items-center" data-aos="fade-up">
+      <i class="fas fa-exchange-alt text-white text-2xl mr-3"></i>
+      <span class="text-white text-lg">Can Be Transferred Easily</span>
+    </li>
+
+    <!-- Item 2: Can Transfer After 60 Days -->
+    <li class="flex items-center" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-calendar-alt text-white text-2xl mr-3"></i>
+      <span class="text-white text-lg">Can Transfer After 60 Days</span>
+    </li>
+
+    <!-- Item 3: 24 Hours For Domain To Active -->
+    <li class="flex items-center" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-clock text-white text-2xl mr-3"></i>
+      <span class="text-white text-lg">24 Hours For Domain To Activate</span>
+    </li>
+  </ul>
+</section>
+
+
+<!-- Domain Offer Card Section with AOS Animation -->
+<section class="bg-green-600 p-4 py-6">
+  <div class="max-w-6xl mx-auto text-center text-white">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-4">Search Most Popular Domain</h2>
+    <p data-aos="fade-up" class="text-lg mb-8">Focus on your business and avoid all the web hosting hassles. Our managed services come with 24/7 support that acts as your extended team.</p>
+    
+    <!-- Domain Cards Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1: .COM -->
+      <div class="bg-green-200 text-green-800 p-8 rounded-lg shadow-lg flex flex-col items-center relative" data-aos="fade-up" data-aos-duration="1000">
+        <i class="fas fa-globe text-4xl mb-4"></i>
+        <h3 class="text-2xl font-bold">•COM</h3>
+        <p class="text-xl font-bold">৳999/yr</p>
+        <p class="text-gray-600 line-through">৳1500/yr</p>
+        <a href="#" class="mt-4 inline-block text-green-600 font-semibold underline">Get Offer <i class="fas fa-arrow-right"></i></a>
+        <!-- Popular Offer Tag -->
+        <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-semibold px-2 py-1 rounded-bl-lg">Popular Offer</span>
+      </div>
+
+      <!-- Card 2: .NET -->
+      <div class="bg-green-200 text-green-800 p-8 rounded-lg shadow-lg flex flex-col items-center relative" data-aos="fade-up" data-aos-duration="1000">
+        <i class="fas fa-globe text-4xl mb-4"></i>
+        <h3 class="text-2xl font-bold">•NET</h3>
+        <p class="text-xl font-bold">৳850/yr</p>
+        <p class="text-gray-600 line-through">৳1300/yr</p>
+        <a href="#" class="mt-4 inline-block text-green-600 font-semibold underline">Get Offer <i class="fas fa-arrow-right"></i></a>
+        <!-- Popular Offer Tag -->
+        <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-semibold px-2 py-1 rounded-bl-lg">Popular Offer</span>
+      </div>
+
+      <!-- Card 3: .ORG -->
+      <div class="bg-green-200 text-green-800 p-8 rounded-lg shadow-lg flex flex-col items-center relative" data-aos="fade-up" data-aos-duration="1000">
+        <i class="fas fa-globe text-4xl mb-4"></i>
+        <h3 class="text-2xl font-bold">•ORG</h3>
+        <p class="text-xl font-bold">৳900/yr</p>
+        <p class="text-gray-600 line-through">৳1400/yr</p>
+        <a href="#" class="mt-4 inline-block text-green-600 font-semibold underline">Get Offer <i class="fas fa-arrow-right"></i></a>
+        <!-- Popular Offer Tag -->
+        <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-semibold px-2 py-1 rounded-bl-lg">Popular Offer</span>
+      </div>
+
+      <!-- Card 4: .INFO -->
+      <div class="bg-green-200 text-green-800 p-8 rounded-lg shadow-lg flex flex-col items-center relative" data-aos="fade-up" data-aos-duration="1000">
+        <i class="fas fa-globe text-4xl mb-4"></i>
+        <h3 class="text-2xl font-bold">•INFO</h3>
+        <p class="text-xl font-bold">৳750/yr</p>
+        <p class="text-gray-600 line-through">৳1200/yr</p>
+        <a href="#" class="mt-4 inline-block text-green-600 font-semibold underline">Get Offer <i class="fas fa-arrow-right"></i></a>
+        <!-- Popular Offer Tag -->
+        <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-semibold px-2 py-1 rounded-bl-lg">Popular Offer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container mx-auto py-6 px-4">
+  <!-- Section Heading -->
+  <div class="text-center mb-8">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">Need Some Help?</h2>
+    <h4 data-aos="fade-up" class="text-xl text-white mb-4">Call our Award-Winning Support Team</h4>
+    <p data-aos="fade-up" class="text-white max-w-lg mx-auto">
+      We're always standing by to give you any help you need. Standard SATA provides all new virtual private servers with high performance.
+    </p>
+  </div>
+
+  <!-- Contact Methods -->
+  <div class="text-center mb-8">
+    <div class="flex justify-center items-center space-x-4" data-aos="fade-up">
+      <!-- Phone Icon and Number -->
+      <a href="tel:+8801978805772" class="flex items-center text-white  hover:underline">
+        <i class="fas fa-phone-alt text-white text-xl mr-2"></i> +8801978805772
+      </a>
+
+      <!-- Separator (Lines) -->
+      <span class="w-1 h-8 bg-white"></span>
+
+      <!-- Chat Icon and Chat Now -->
+      <a href="#" class="flex items-center text-white hover:underline">
+        <i class="fas fa-comments text-white text-xl mr-2"></i> Chat Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Full-Width Image -->
+  <div class="text-center mb-12">
+    <img src="assets/images/support.png" alt="Support Image" class="w-full h-auto rounded-lg shadow-lg" data-aos="fade-up" />
+  </div>
+
+  <!-- 3 Boxes -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    <!-- Box 1: WhatsApp -->
+    <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+      <i class="fab fa-whatsapp text-green-600 text-4xl mb-4"></i>
+      <h3 class="text-green-600 text-xl font-bold mb-2">WhatsApp</h3>
+      <p class="text-green-600">01978805772</p>
+    </div>
+
+    <!-- Box 2: Messenger -->
+    <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+      <i class="fab fa-facebook-messenger text-green-600 text-4xl mb-4"></i>
+      <h3 class="text-green-600 text-xl font-bold mb-2">Messenger</h3>
+      <p class="text-green-600">m.me/DomainServerBD</p>
+    </div>
+
+    <!-- Box 3: Chat with Agent -->
+    <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-headset text-green-600 text-4xl mb-4"></i>
+      <h3 class="text-green-600 text-xl font-bold mb-2">Chat with Agent</h3>
+      <p class="text-green-600">DomainServerBD.com/chat</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="container mx-auto py-6 px-4">
+  <!-- Section Heading -->
+  <div class="text-center mb-8">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">Why Us Hostim for Domains?</h2>
+    <p data-aos="fade-up" class="text-white max-w-2xl mx-auto">
+      Focus on your business and avoid all the web hosting hassles. Our managed service comes with 24/7 support that acts as your extended team.
+    </p>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" data-aos="fade-up">
+    <!-- Image (1st Column) -->
+    <div class="flex justify-center">
+      <img src="assets/images/private-info.png" alt="Private Registration" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+
+    <!-- Content (2nd Column) -->
+    <div class="text-white">
+      <h3 class="text-2xl font-bold mb-4">Free Private Registration</h3>
+      <p class="mb-4">
+        Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+      </p>
+      <p>
+        Get WordPress in the cloud, fine-tuned for enterprise needs. Your traffic performance and exceptional user experiences.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="container mx-auto py-6 px-4">
+
+<!-- Section Heading -->
+<div class="text-center mb-8">
+  <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">Why Us Hostim for Domains?</h2>
+  <p data-aos="fade-up" class="text-white max-w-2xl mx-auto">
+    Focus on your business and avoid all the web hosting hassles. Our managed service comes with 24/7 support that acts as your extended team.
+  </p>
+</div>
+
+  <div data-aos="fade-right" class="tabs flex p-4 ml-8 mr-8 bg-green-200 rounded-md justify-center mb-8">
+    <!-- Tab Button 1 -->
+    <button id="tab1-btn" class="tab-button bg-green-600 text-white px-4 py-2 rounded-md mr-2" onclick="openTab(event, 'Starter')">Tab 1</button>
+    <!-- Tab Button 2 -->
+    <button id="tab2-btn" class="tab-button bg-white text-green-600 px-4 py-2 rounded-md mr-2" onclick="openTab(event, 'Pro')">Tab 2</button>
+    <!-- Tab Button 3 -->
+    <button id="tab3-btn" class="tab-button bg-white text-green-600 px-4 py-2 rounded-md" onclick="openTab(event, 'Enterprise')">Tab 3</button>
+  </div>
+
+<!-- Tab Content for Starter -->
+<div data-aos="fade-right" id="Starter" class="tab-content">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Pricing Card 1 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Starter</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best option for personal use & for your next project.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$29</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Individual configuration</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>No setup, or hidden fees</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 2 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6  bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Professional</h3>
+      <p class="font-light text-green-600 sm:text-lg">Suitable for small businesses.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$49</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Full customization</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>24/7 support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 3 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6  bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Enterprise</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best for large enterprises.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$99</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Advanced analytics</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Priority support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Tab Content for Pro -->
+  <div data-aos="fade-right" id="Pro" class="tab-content" style="display: none;">
+
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Pricing Card 1 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Starter</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best option for personal use & for your next project.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$29</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Individual configuration</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>No setup, or hidden fees</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 2 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Professional</h3>
+      <p class="font-light text-green-600 sm:text-lg">Suitable for small businesses.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$49</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Full customization</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>24/7 support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 3 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Enterprise</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best for large enterprises.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$99</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Advanced analytics</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Priority support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- Tab Content for Enterprise -->
+  <div data-aos="fade-right" id="Enterprise" class="tab-content" style="display: none;">
+
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Pricing Card 1 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Starter</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best option for personal use & for your next project.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$29</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Individual configuration</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>No setup, or hidden fees</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 2 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Professional</h3>
+      <p class="font-light text-green-600 sm:text-lg">Suitable for small businesses.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$49</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Full customization</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>24/7 support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+    <!-- Pricing Card 3 -->
+    <div data-aos="zoom-in" class="pricing-card flex flex-col p-6 m-4 bg-green-200 rounded-md border border-gray-100 shadow-lg text-center">
+      <h3 class="mb-4 text-2xl font-semibold text-green-600">Enterprise</h3>
+      <p class="font-light text-green-600 sm:text-lg">Best for large enterprises.</p>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-5xl font-extrabold text-green-600">$99</span>
+        <span class="text-green-600">/month</span>
+      </div>
+      <!-- List -->
+      <ul class="mb-8 space-y-4 text-left text-green-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Advanced analytics</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-check text-green-600"></i> <!-- Font Awesome Icon -->
+          <span>Priority support</span>
+        </li>
+      </ul>
+      <a href="#" class="text-white bg-green-600 hover:bg-green-700 font-medium rounded-lg text-sm px-5 py-2.5">Get started</a>
+    </div>
+
+  </div>
+</div>
+
+
+</section>
+
+
+<script type="text/javascript">
+function openTab(evt, tabName) {
+  // Get all tab content elements and hide them
+  const tabContents = document.getElementsByClassName('tab-content');
+  for (let i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = 'none';
+  }
+
+  // Remove active class from all tab buttons
+  const tabButtons = document.getElementsByClassName('tab-button');
+  for (let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('bg-green-600', 'text-white');
+    tabButtons[i].classList.add('bg-white', 'text-green-600');
+  }
+
+  // Show the clicked tab content and set the clicked button to active
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.remove('bg-white', 'text-green-600');
+  evt.currentTarget.classList.add('bg-green-600', 'text-white');
+}
+
+// By default, open the first tab
+document.getElementById('tab1-btn').click();
+
+</script>
+
+<section class="container mx-auto py-6 px-4">
+  <!-- Section Heading -->
+  <div class="text-center mb-8">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">Why Us Hostim for Domains?</h2>
+    <p data-aos="fade-up" class="text-white max-w-2xl mx-auto">
+      Focus on your business and avoid all the web hosting hassles. Our managed service comes with 24/7 support that acts as your extended team.
+    </p>
+  </div>
+
+
+
+  <!-- Row 2 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
+    <!-- Content (1st Column) -->
+    <div class="text-white">
+      <h3 class="text-2xl font-bold mb-4">Protect & Secure Your Data for Our Customers</h3>
+      <p class="mb-4">
+        Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+      </p>
+      <p>
+        Get WordPress in the cloud, fine-tuned for enterprise needs. Your traffic performance and exceptional user experiences.
+      </p>
+    </div>
+
+    <!-- Image (2nd Column) -->
+    <div class="flex justify-center">
+      <img src="assets/images/private-info.png" alt="Data Security" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section data-aos="fade-right" class="bg-green-600 p-4 py-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left Side: Trusted Customers Info -->
+    <div class="text-white">
+      <h2 data-aos="fade-up" class="text-4xl font-bold mb-4">Trusted by 45+ Customers Around the World</h2>
+
+    </div>
+
+    <!-- Right Side: Customer Ratings and Reviews -->
+    <div data-aos="zoom-in" class="text-white">
+              <p class="text-lg">We take pride in serving a global community with exceptional service and support.</p>
+      <div class="flex items-center mb-2">
+        <!-- 5-Star Rating -->
+        <div class="text-yellow-400 flex space-x-1">
+          <i data-aos="zoom-in" class="fas fa-star"></i>
+          <i data-aos="zoom-in" class="fas fa-star"></i>
+          <i data-aos="zoom-in" class="fas fa-star"></i>
+          <i data-aos="zoom-in" class="fas fa-star"></i>
+          <i data-aos="zoom-in" class="fas fa-star"></i>
+        </div>
+        <p data-aos="fade-up" class="ml-2 text-lg">4.9 out of 5 based on 37 reviews</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Center: Testimonial Carousel -->
+  <div data-aos="fade-right" class="max-w-4xl mx-auto mt-12 relative carousel-container">
+    <div id="testimonial-carousel">
+      <!-- Carousel items -->
+      <div class="carousel-item active">
+        <div class="p-6 bg-green-200 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-4 mb-4">
+            <img class="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt="Customer avatar">
+            <div>
+              <h3 class="text-lg text-green-600 font-bold">John Doe</h3>
+              <p class="text-sm">Web Developer</p>
+            </div>
+          </div>
+          <p class="text-green-700">"Fantastic service and support! I highly recommend their domain and hosting services."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="p-6 bg-green-200 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-4 mb-4">
+            <img class="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt="Customer avatar">
+            <div>
+              <h3 class="text-lg font-bold">Jane Smith</h3>
+              <p class="text-sm">Entrepreneur</p>
+            </div>
+          </div>
+          <p>"The team is incredibly helpful, and the pricing is excellent for the value provided."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="p-6 bg-green-200 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-4 mb-4">
+            <img class="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt="Customer avatar">
+            <div>
+              <h3 class="text-lg font-bold">David Lee</h3>
+              <p class="text-sm">Designer</p>
+            </div>
+          </div>
+          <p>"Excellent customer service! My website was up and running in no time."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel controls placed outside the carousel container -->
+  <div class="flex justify-between max-w-4xl mx-auto mt-4">
+    <button id="prevBtn" type="button" class="flex p-3 rounded-lg items-center justify-center px-4 bg-green-800 text-white">
+      <span class="sr-only">Previous</span>
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button id="nextBtn" type="button" class="flex p-3 rounded-lg items-center justify-center px-4 bg-green-800 text-white">
+      <span class="sr-only">Next</span>
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+</section>
+
+<!-- Custom JavaScript for Carousel -->
+<script>
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  let currentSlide = 0;
+
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    carouselItems[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % carouselItems.length;
+    carouselItems[currentSlide].classList.add('active');
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', function() {
+    carouselItems[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+    carouselItems[currentSlide].classList.add('active');
+  });
+</script>
+
+
+
+
+<!-- FAQs Section -->
+<section  data-aos="fade-right" class="bg-green-600 p-4 py-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">Why Choose Domain Server Bangladesh for Domains?</h2>
+    <p class="text-lg text-white mb-8">Focus on your business and avoid all the web hosting hassles. Our managed services come with 24/7 support that acts as your extended team.</p>
+    
+    <!-- Full Width Image -->
+    <div class="mb-8">
+      <img src="assets/images/support.png" alt="Domain Server Image" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+
+    <!-- Accordion FAQ Section -->
+    <div data-aos="fade-right" class="space-y-4">
+      <!-- FAQ 1 -->
+      <div data-aos="fade-up" class="border border-green-400 rounded-lg">
+        <button class="w-full text-left px-6 py-4 text-white bg-green-500 rounded-md focus:outline-none" onclick="toggleFAQ(1)">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold">What is Domain Server Bangladesh?</span>
+            <i class="fas fa-chevron-down text-white"></i>
+          </div>
+        </button>
+        <div id="faq1" class="hidden px-6 py-4 text-left text-white bg-green-700 rounded-b-md">
+          Domain Server Bangladesh is a reliable domain and hosting provider offering 24/7 support and managed services for your web hosting needs.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div data-aos="fade-up"  class="border border-green-400 rounded-lg">
+        <button class="w-full text-left px-6 py-4 text-white bg-green-500 rounded-md focus:outline-none" onclick="toggleFAQ(2)">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold">How does 24/7 support work?</span>
+            <i class="fas fa-chevron-down text-white"></i>
+          </div>
+        </button>
+        <div id="faq2" class="hidden px-6 py-4 text-left text-white bg-green-700 rounded-b-md">
+          Our 24/7 support is always available to help you with any technical issues related to domain management or hosting, ensuring uninterrupted service.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div data-aos="fade-up"  class="border border-green-400 rounded-lg">
+        <button class="w-full text-left px-6 py-4 text-white bg-green-500 rounded-md focus:outline-none" onclick="toggleFAQ(3)">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold">Can I transfer my domain?</span>
+            <i class="fas fa-chevron-down text-white"></i>
+          </div>
+        </button>
+        <div id="faq3" class="hidden px-6 py-4 text-left text-white bg-green-700 rounded-b-md">
+          Yes, you can easily transfer your domain to Domain Server Bangladesh with no hidden fees or complicated processes.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for FAQ Toggle -->
+<script>
+  function toggleFAQ(faqNumber) {
+    const faq = document.getElementById('faq' + faqNumber);
+    faq.classList.toggle('hidden');
+  }
+</script>
+
+
+<section data-aos="fade-right" class="container bg-green-700 mx-auto py-6 px-2">
+  <!-- Section Heading -->
+  <div class="text-center mb-4">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-white mb-4">Need Some Help?</h2>
+    <h4 data-aos="fade-up" class="text-xl text-white mb-4">Call our Award-Winning Support Team</h4>
+    <p data-aos="fade-up" class="text-white max-w-lg mx-auto">
+      We're always standing by to give you any help you need. Standard SATA provides all new virtual private servers with high performance.
+    </p>
+  </div>
+
+  <!-- Contact Methods -->
+  <div class="text-center mb-0">
+    <div class="flex justify-center items-center space-x-4" >
+      <!-- Phone Icon and Number -->
+      <a href="tel:+8801978805772" class="flex items-center text-white  hover:underline">
+        <i class="fas fa-phone-alt text-white text-xl mr-2"></i> +8801978805772
+      </a>
+
+      <!-- Separator (Lines) -->
+      <span class="w-1 h-8 bg-white"></span>
+
+      <!-- Chat Icon and Chat Now -->
+      <a href="#" class="flex items-center text-white hover:underline">
+        <i class="fas fa-comments text-white text-xl mr-2"></i> Chat Now
+      </a>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+<footer class="bg-green-700 rounded-lg shadow ">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:ustify-between">
+      <span class="text-sm text-white sm:text-center">© 2024 <a href="/" class="hover:underline">Domain Server BD™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 md:ml-6 text-sm font-medium text-white  sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Terme & Services</a>
+        </li>
+
+
+
+    </ul>
+    </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
